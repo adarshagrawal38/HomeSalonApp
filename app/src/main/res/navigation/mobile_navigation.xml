@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_referFriend"
+        android:name="com.arhamtechnolabs.homesalonapp.ReferAFriendFragment"
+        tools:layout="@layout/fragment_refer_afriend" />
+
+    <fragment
+        android:id="@+id/nav_franchise"
+        android:name="com.arhamtechnolabs.homesalonapp.FragmentFranchise"
+        android:label="Franchise"
+        tools:layout="@layout/fragment_fragment_franchise" />
+
+    <fragment
+        android:id="@+id/nav_tieUP"
+        android:name="com.arhamtechnolabs.homesalonapp.FragmentTieUp"
+        android:label="Tie Up"
+        tools:layout="@layout/fragment_tie_up" />
+
+    <fragment
+        android:id="@+id/nav_giftVoucher"
+        android:name="com.arhamtechnolabs.homesalonapp.FragmentGiftVoucher"
+        android:label="Tie Up"
+        tools:layout="@layout/fragment_fragment_gift_voucher" />
+
+
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.arhamtechnolabs.homesalonapp.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_faq" />
+
+
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.arhamtechnolabs.homesalonapp.FragmentPrivacyPolicy"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.arhamtechnolabs.homesalonapp.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.arhamtechnolabs.homesalonapp.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

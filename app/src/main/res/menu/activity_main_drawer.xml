@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_appointments"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_money"
+            android:title="Home Salon Wallet" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_giftVoucher"
+                android:icon="@drawable/ic_gift_voucher"
+                android:title="Gift Vouchers" />
+            <item
+                android:id="@+id/nav_referFriend"
+                android:icon="@drawable/ic_refer"
+                android:title="Refer a Friend" />
+            <item
+                android:id="@+id/nav_tieUP"
+                android:icon="@drawable/ic_deal"
+                android:title="Tie Up" />
+            <item
+                android:id="@+id/nav_franchise"
+                android:icon="@drawable/ic_business_and_finance"
+                android:title="Franchise" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_question"
+                android:title="FAQs" />
+            <item
+                android:id="@+id/callUs"
+                android:icon="@drawable/ic_call"
+                android:title="Call Us" />
+        </menu>
+    </item>
+    <item android:title="Sign Out">
+        <menu>
+            <item
+                android:id="@+id/nav_signOut"
+                android:icon="@drawable/ic_logout"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+
+</menu>

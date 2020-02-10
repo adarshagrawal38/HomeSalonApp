@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EC1D4B</color>
+    <color name="colorPrimaryDark">#FF4181</color>
+    <color name="colorAccent">#FFC0CB</color>
+
+    <color name="color_grad_start">#f26866</color>
+    <color name="color_grad_end">#f46567</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#c1c1c1</color>
+
+    <color name="newcolor">#D81B60</color>
+    <color name="bgAll">#f2f2f2</color>
+</resources>

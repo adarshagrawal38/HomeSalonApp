@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:weightSum="15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_weight="13"
+                            android:textColor="@color/black"
+                            android:id="@+id/packageName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Package Name : "
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            />
+
+                        <pl.polak.clicknumberpicker.ClickNumberPickerView
+                            android:layout_weight="1"
+                            android:id="@+id/servicePicker"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            app:picker_corner_radius="20"
+                            app:pickers_background_color="#f46567"
+                            app:value_background_color="#fff"
+                            app:integer_priority="true"
+                            app:value_text_color="#000"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:min_value="1"
+                            android:visibility="gone"
+                            />
+
+                        <include
+                            android:layout_weight="1"
+                            layout="@layout/number_picker_custom_layout"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Package Description : "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description : "
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                >
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Cost"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_grad_end"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <pl.polak.clicknumberpicker.ClickNumberPickerView
+                        android:id="@+id/productCost"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        app:picker_corner_radius="20"
+                        app:pickers_background_color="#f46567"
+                        app:value_background_color="#fff"
+                        app:integer_priority="true"
+                        app:value_text_color="#000"
+                        android:layout_gravity="center"
+                        app:min_value="1"
+                        />
+                    <TextView
+                        android:id="@+id/productCostTextView"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/color_grad_end"
+                        android:text="Rs. 545"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:src="@drawable/dotted"
+                android:layerType="software" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+            <Button
+                android:layout_weight="0"
+                android:id="@+id/deleteItemFromCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/color_grad_end"
+                android:drawableLeft="@drawable/ic_trash"
+                android:background="@android:color/transparent"
+                android:textColor="@color/color_grad_end"
+                android:text="Remove"
+                />
+
+            <TextView
+                android:layout_weight="2"
+
+                android:id="@+id/finalAmount"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. : 600"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/color_grad_end"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
