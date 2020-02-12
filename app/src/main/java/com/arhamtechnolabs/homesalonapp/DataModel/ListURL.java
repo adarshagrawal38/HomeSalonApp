@@ -5,7 +5,7 @@ import android.widget.BaseAdapter;
 public class ListURL {
 
     //    public static String BASE_URL = "http://192.168.43.62/home-salon/";
-    public static String BASE_URL = "https://www.homesalon.in/admin/api/home-salon/";
+    public static String BASE_URL = "Your server link where you pushed your admin pannel";
 
     //INSERT API CALLS
     public static String INSERT_FRANCHISE = BASE_URL + "insert_franchise.php";
