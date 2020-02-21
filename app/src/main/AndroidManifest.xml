@@ -87,7 +87,7 @@
             android:value="@string/facebook_app_id" />
         <meta-data
             android:name="instamojo.orderauth.url"
-            android:value="https://www.homesalon.in/admin/api/home-salon/access_token.php" />
+            android:value="YOUR_ACCESS_TOKEN_URL" />
     </application>
 
 </manifest>
